@@ -1,2 +1,2 @@
 # projects
-Lm tech portfo;io
+Lm tech portfolio
