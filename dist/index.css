@@ -40,11 +40,18 @@ a {
 #grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    width: 80vw;
+    width: 80%;
     margin: auto;
     gap: 20px;
 }
 
 #grid-container>div {
     background-color: grey;
+    padding: 10px;
+    width: 24rem;
+}
+
+
+.A img {
+    width: 23rem;
 }
