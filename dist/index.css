@@ -1,6 +1,57 @@
 *{
-    margin: auto;
-    padding: 10px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    font-family: 'Courier New', Courier, monospace;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    list-style: none;
+    margin: 30px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #282828;
+}
+
+#one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+#one p {
+    width: 50%;
+}
+
+#one h1 {
+    font-size: 2.5rem;
+}
+
+#one h1:nth-child(2) {
+    color: #36B37E;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 80%;
+    margin: auto;
+    gap: 20px;
+}
+
+#grid-container>div {
+    background-color: grey;
+    padding: 10px;
+    width: 24rem;
+}
+
+
+.A img {
+    width: 23rem;
 }
