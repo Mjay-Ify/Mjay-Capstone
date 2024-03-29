@@ -44,13 +44,14 @@ a {
     color: #36B37E;
 }
 #one ul{
-    width: 15;
+    width: 30px;
     display: flex;
     justify-content: center;
     gap: 10px;
     margin: 15px;
     padding: 20px;
 }
+
 #one li{
     list-style: none;
     background: none;
@@ -107,7 +108,15 @@ a {
     color: white;
     width: auto;
 }
+#grid-container>div>a:hover{
+    transition: all 0.5s ease-in;
+    box-shadow: 0 8px 10px #36B37F;
+}
+#grid-container>div>a:active{
+    background-color: #008552;
 
+
+}
 #grid-container>div>img {
     width: 23rem;
 
@@ -166,6 +175,11 @@ a {
     margin: 50px;
 
 }
+.about>a:hover{
+    transition: all 0.5s ease-in;
+    box-shadow: 0 8px 10px #36B37F;
+}
+
 .about>a>button{
     border: 0;
     background: none;
@@ -357,6 +371,6 @@ button{
     
 }
 
-@media
+
 
 
