@@ -24,9 +24,7 @@ a {
     align-items: center;
     text-align: center;
     gap: 10px;
-    /* margin: 50px; */
     padding-bottom: 50px;
-    /* margin: 20px 10px; */
     background-image: url("../Images/header-background.png");
     height: 50vw;
     background-repeat: no-repeat;
@@ -39,23 +37,37 @@ a {
 }
 
 #one h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 #one h1:nth-child(2) {
     color: #36B37E;
 }
-
+#one ul{
+    width: 15;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 15px;
+    padding: 20px;
+}
+#one li{
+    list-style: none;
+    background: none;
+    border: 0;
+    
+}
 #grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     width: 80%;
     margin: auto;
     gap: 20px;
+    justify-content: center;
+
 }
 
 #grid-container>div {
-    /* background-color: gray; */
     border-radius: 10px;
     border: 1px solid black;
     padding: 10px;
@@ -70,6 +82,22 @@ a {
     width: 40%;
     margin-left: 100px;
 } 
+#grid-container>div>ul {
+     display: flex;
+     justify-content: center;
+     border-radius: 5px;
+     font-size: 11px; 
+     
+}
+
+#grid-container>div>ul>li{
+    list-style: none;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.137);
+    padding: 7px;
+    margin: 12px;
+
+}
 
 #grid-container>div>a>button{
     border: 0;
@@ -77,14 +105,15 @@ a {
     padding: 5px;
     margin: 5px;
     color: white;
+    width: auto;
 }
 
-.A img {
+#grid-container>div>img {
     width: 23rem;
 
 }
 
-.A p{
+#grid-container p{
     display: flex;
     justify-content: center;
     padding: 10px;
@@ -101,24 +130,6 @@ a {
 
 }
 
-#grid-container>div>ul {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     text-align: center;
-     border-radius: 5px;
-     font-size: 11px; 
-     
-}
-
-#grid-container>div>ul>li{
-    list-style: none;
-    border-radius: 5px;
-    background-color: rgba(0, 0, 0, 0.137);
-    padding: 7px;
-    margin: 10px;
-
-}
 
 .about{
     display: flex;
@@ -127,27 +138,18 @@ a {
     text-align: center;
     gap: 10px;
     padding-top: 100px;
-    margin: 15px;
-    background-image: 
-    url("../Images/aboutme.png");
-    /* url("../Images/about-me.svg"); */
-
-    background-repeat: no-repeat;
-    background-size: 85%;
-    background-position: right;
-    
-    /* justify-content: center; */
-
+    margin: 10px;
 }
-.about img{
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* justify-content: left; */
-    /* margin-left: 40px; */
-    width: 80px;
-    height: 100px;
-    float: left;
-    margin: auto 5px;
+.aboutleft{
+    width: 150px;
+    position: absolute;
+    left: 0;
+}
+.aboutright{
+    width: 100%;
+    position: absolute;
+    right: 0;
+
 }
  .about h2{
     padding-top: 50px;    
@@ -169,7 +171,7 @@ a {
     background: none;
     padding: 5px;
     margin: 5px;
-
+    width: auto;
 
 }
 
@@ -179,17 +181,28 @@ a {
     width: 80%;
     margin: auto;
     gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
 }
 
 .container>div{
     border-radius: 5px;
-    /* border: 1px solid black; */
     padding: 10px;
     width: 24rem;
     height: 120%;
     margin-bottom: 15px;
     background-color: rgba(0, 0, 0, 0.137);
 }
+.container img {
+    width: 50px;
+    border-radius: 100%;
+    background-color: white;
+    justify-items: center;
+    padding: 10px;
+    margin-top: 10px;
+}
+
 .container>div ul {
     display: flex;
      justify-content: center;
@@ -208,11 +221,139 @@ a {
 
 }
 .container>div p{
-    margin: 20px 30px;
     display: flex;
     justify-content: center;
+    padding: 10px;
+    margin: 20px;
 
 }
-.container>div>ul>li>a{
-    color: #36B37F;
+
+#contact{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    gap: 30px;
+    align-items: center;
+    width: 90%;
+    justify-content: center;
+    place-content: center;
+    margin-top: 50px;
 }
+#contact>div{
+    border-radius: 5px;
+    border-color: #36B37E;
+    padding: 10px;
+}
+.contact-container>p{
+    font-size: 1.5rem;
+    text-align: justify;
+    font-weight: 800;
+    width: 100%;
+}
+.form{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0px;
+
+}
+
+.fname{
+    display: flex;
+    width: 100%;
+    gap: 10px;
+}
+input, textarea{
+    width: 100%;
+    padding: 10px;
+
+}
+form>div{
+    margin-bottom: 20px;
+}
+input, textarea::placeholder{
+    font-style: italic;
+}
+
+button{
+    border: 0;
+    background: none;
+    padding: 5px;
+    border-radius: 4px;
+    background-color: #36B37F;
+    color: white;
+    width: 20%;
+
+}
+
+#contactleft{
+    width: 150px;
+    position: absolute;
+    left: 0;
+    margin-bottom: 50px;
+}
+
+.contactmid{
+    width: 150px;
+    position: absolute;
+    left: 30%;
+}
+.contactright{
+    width: 150px;
+    position: absolute;
+    right: 0;
+
+    
+}
+.first{
+    width: 20px;
+}
+
+.navigation>ul{
+    width: 15;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20%;
+    padding: 20px;
+}
+.navigation>ul li{
+    list-style: none;
+    background: none;
+    border: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    #contact{
+        display: block;
+    }
+    .container{
+        display: block;
+    }
+    #grid-container{
+        display: block;
+    }
+    
+}
+
