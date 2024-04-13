@@ -335,22 +335,57 @@ button {
 
 
 @media screen and (max-width: 600px) {
-  *{
-    /* margin: 10px; */
-
+  .nav-list{
+    margin: 10px;
+    padding: 10px;
+    gap: 7px;
+  
+   } 
+   #one {
+    display: block;
+    text-align: center;
+    margin: 10px;
+    gap: 20px;
+  
   }
+  #one p {
+    width: 70%;
+    margin: 10px;
+    padding: 10px;
+  }
+  
+  #one h1 {
+    font-size: 1.2rem;
+    margin: 10px;
+  }
+  #one ul {
+    width: 30px;
+    gap: 10px;
+    margin: 10px;
+    padding: 10px;
+  
+  }
+  
+  #grid-container {
+    display: block;
+    width: 50%;
+    gap: 20px;
+  }
+  .container{
+    display: block;
+  
+  }
+  }
+  
+  
+@media screen and (601px < width > 1024px){
   #contact {
     display: block;
   }
   
   .container {
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  gap: 20px;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
+  display: block;
+
 }
 .container > div {
     border-radius: 5px;
@@ -362,15 +397,10 @@ button {
   }
   .container > div ul{
     width: 90%;
-    flex-wrap: wrap;
-    margin: auto;
   }
 
   #grid-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
+    display: block;
 
   }
   #one h1 {
@@ -384,7 +414,4 @@ button {
   #one {
     background-size: 100%;
   }
-}
-@media screen and (601px < width > 1024px){
-    
 }
