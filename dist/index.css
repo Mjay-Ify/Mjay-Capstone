@@ -331,10 +331,27 @@ button {
 
 
 
+@media screen and (max-width: 768px) {
+  #grid-container {
+    display: block;
+    width: 50%;
+    gap: 20px;
+  }
+  .container{
+    display: block;
+  
+  }
+  #contact {
+    display: block;
+  }
 
+
+  
+}
 
 
 @media screen and (max-width: 600px) {
+
   .nav-list{
     margin: 10px;
     padding: 10px;
@@ -375,32 +392,31 @@ button {
     display: block;
   
   }
+  #contact {
+    display: block;
+  }
   }
   
   
 @media screen and (601px < width > 1024px){
   #contact {
     display: block;
+    width: 90%;
+ 
   }
   
   .container {
   display: block;
 
 }
-.container > div {
-    border-radius: 5px;
-    padding: 10px;
-    width: 100%;
-    height: 100%;
-    margin-bottom: 15px;
-    background-color: rgba(0, 0, 0, 0.137);
-  }
+
   .container > div ul{
-    width: 90%;
+    width: 90%;     
   }
 
   #grid-container {
     display: block;
+    width: 90%;
 
   }
   #one h1 {
